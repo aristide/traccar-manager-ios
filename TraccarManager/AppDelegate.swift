@@ -37,12 +37,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if FIREBASE
 
         FirebaseApp.configure()
-            
+
         Messaging.messaging().delegate = self
 
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().delegate = self
-            
+
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
             UNUserNotificationCenter.current().requestAuthorization(
                 options: authOptions,

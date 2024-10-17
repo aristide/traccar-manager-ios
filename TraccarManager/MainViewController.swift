@@ -24,11 +24,18 @@ class MainViewController: UIViewController, WKUIDelegate {
     static let eventEvent = Notification.Name("eventEvent")
     static let keyToken = "keyToken"
     static let keyEventId = "keyEventId"
+    static let appUrl = "http://localhost:3000"
     
     var webView: WKWebView!
     var initialized = false
     var pendingEventId: String? = nil
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -86,7 +93,8 @@ class MainViewController: UIViewController, WKUIDelegate {
     }
     
     private func loadPage() {
-        if let urlString = UserDefaults.standard.object(forKey: "url") as? String {
+//        if let urlString = UserDefaults.standard.object(forKey: "url") as? String {
+        if let urlString = MainViewController.appUrl as String? {
             var urlComponents = URLComponents(string: urlString)
             if let eventId = pendingEventId {
                 urlComponents?.queryItems = [URLQueryItem(name: "eventId", value: eventId)]

@@ -3,14 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541F9C9D2A6237B700E80A77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 541F9C9C2A6237B700E80A77 /* GoogleService-Info.plist */; };
+		541F9CA02A62398D00E80A77 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 541F9C9F2A62398D00E80A77 /* FirebaseAnalytics */; };
+		541F9CA22A62398D00E80A77 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 541F9CA12A62398D00E80A77 /* FirebaseCrashlytics */; };
+		541F9CA42A62398D00E80A77 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 541F9CA32A62398D00E80A77 /* FirebaseMessaging */; };
+		54C275E72AC06132000319B2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C275E62AC06132000319B2 /* Reachability.swift */; };
+		54C275E92AC06875000319B2 /* NetworkErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C275E82AC06875000319B2 /* NetworkErrorViewController.swift */; };
+		54C275EB2AC06DF5000319B2 /* PageErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C275EA2AC06DF5000319B2 /* PageErrorViewController.swift */; };
 		5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E887A2428B954D500C76583 /* SecurityManager.swift */; };
-		5EE3CA2D2998757A002C86E4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE3CA2C2998757A002C86E4 /* FirebaseAnalytics */; };
-		5EE3CA2F2998757A002C86E4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE3CA2E2998757A002C86E4 /* FirebaseCrashlytics */; };
-		5EE3CA312998757A002C86E4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE3CA302998757A002C86E4 /* FirebaseMessaging */; };
 		CE0721131C86EB9800D057CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721121C86EB9800D057CE /* AppDelegate.swift */; };
 		CE0721151C86EB9800D057CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0721141C86EB9800D057CE /* MainViewController.swift */; };
 		CE0721181C86EB9800D057CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0721161C86EB9800D057CE /* Main.storyboard */; };
@@ -21,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541F9C9C2A6237B700E80A77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54C275D72AB749A2000319B2 /* TraccarManager copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TraccarManager copy-Info.plist"; path = "/Users/adncorp/Projects/Traccar/traccar-manager-ios/TraccarManager copy-Info.plist"; sourceTree = "<absolute>"; };
+		54C275E62AC06132000319B2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		54C275E82AC06875000319B2 /* NetworkErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewController.swift; sourceTree = "<group>"; };
+		54C275EA2AC06DF5000319B2 /* PageErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageErrorViewController.swift; sourceTree = "<group>"; };
 		5E59E82D21565CF500C9A9E3 /* TraccarManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TraccarManager.entitlements; sourceTree = "<group>"; };
 		5E887A2428B954D500C76583 /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
 		CE07210F1C86EB9800D057CE /* TraccarManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraccarManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE3CA312998757A002C86E4 /* FirebaseMessaging in Frameworks */,
-				5EE3CA2F2998757A002C86E4 /* FirebaseCrashlytics in Frameworks */,
-				5EE3CA2D2998757A002C86E4 /* FirebaseAnalytics in Frameworks */,
+				541F9CA42A62398D00E80A77 /* FirebaseMessaging in Frameworks */,
+				541F9CA22A62398D00E80A77 /* FirebaseCrashlytics in Frameworks */,
+				541F9CA02A62398D00E80A77 /* FirebaseAnalytics in Frameworks */,
 				CE4BBC0B1DE844300074B0CC /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +64,7 @@
 				CE0721111C86EB9800D057CE /* TraccarManager */,
 				CE0721101C86EB9800D057CE /* Products */,
 				CE4BBC071DE83EEE0074B0CC /* Frameworks */,
+				54C275D72AB749A2000319B2 /* TraccarManager copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,14 +79,18 @@
 		CE0721111C86EB9800D057CE /* TraccarManager */ = {
 			isa = PBXGroup;
 			children = (
+				541F9C9C2A6237B700E80A77 /* GoogleService-Info.plist */,
 				5E59E82D21565CF500C9A9E3 /* TraccarManager.entitlements */,
 				CE0721121C86EB9800D057CE /* AppDelegate.swift */,
 				CE850DB51E18EF0A00F4F73A /* StartViewController.swift */,
+				54C275E62AC06132000319B2 /* Reachability.swift */,
 				CE0721141C86EB9800D057CE /* MainViewController.swift */,
 				5E887A2428B954D500C76583 /* SecurityManager.swift */,
+				54C275E82AC06875000319B2 /* NetworkErrorViewController.swift */,
+				54C275EA2AC06DF5000319B2 /* PageErrorViewController.swift */,
 				CE0721161C86EB9800D057CE /* Main.storyboard */,
-				CE0721191C86EB9800D057CE /* Assets.xcassets */,
 				CE07211B1C86EB9800D057CE /* LaunchScreen.storyboard */,
+				CE0721191C86EB9800D057CE /* Assets.xcassets */,
 				CE07211E1C86EB9800D057CE /* Info.plist */,
 			);
 			path = TraccarManager;
@@ -108,9 +122,9 @@
 			);
 			name = TraccarManager;
 			packageProductDependencies = (
-				5EE3CA2C2998757A002C86E4 /* FirebaseAnalytics */,
-				5EE3CA2E2998757A002C86E4 /* FirebaseCrashlytics */,
-				5EE3CA302998757A002C86E4 /* FirebaseMessaging */,
+				541F9C9F2A62398D00E80A77 /* FirebaseAnalytics */,
+				541F9CA12A62398D00E80A77 /* FirebaseCrashlytics */,
+				541F9CA32A62398D00E80A77 /* FirebaseMessaging */,
 			);
 			productName = TraccarManager;
 			productReference = CE07210F1C86EB9800D057CE /* TraccarManager.app */;
@@ -122,9 +136,10 @@
 		CE0721071C86EB9800D057CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1320;
-				ORGANIZATIONNAME = "Anton Tananaev";
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "ATM Motors";
 				TargetAttributes = {
 					CE07210E1C86EB9800D057CE = {
 						CreatedOnToolsVersion = 7.2;
@@ -148,7 +163,7 @@
 			);
 			mainGroup = CE0721061C86EB9800D057CE;
 			packageReferences = (
-				5EE3CA2B2998757A002C86E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				541F9C9E2A62398D00E80A77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CE0721101C86EB9800D057CE /* Products */;
 			projectDirPath = "";
@@ -165,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE07211D1C86EB9800D057CE /* LaunchScreen.storyboard in Resources */,
+				541F9C9D2A6237B700E80A77 /* GoogleService-Info.plist in Resources */,
 				CE07211A1C86EB9800D057CE /* Assets.xcassets in Resources */,
 				CE0721181C86EB9800D057CE /* Main.storyboard in Resources */,
 			);
@@ -195,10 +211,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C275E92AC06875000319B2 /* NetworkErrorViewController.swift in Sources */,
 				CE850DB61E18EF0A00F4F73A /* StartViewController.swift in Sources */,
 				CE0721151C86EB9800D057CE /* MainViewController.swift in Sources */,
 				CE0721131C86EB9800D057CE /* AppDelegate.swift in Sources */,
+				54C275E72AC06132000319B2 /* Reachability.swift in Sources */,
 				5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */,
+				54C275EB2AC06DF5000319B2 /* PageErrorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +304,7 @@
 				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = YW49KTJKFW;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_SWIFT_FLAGS = "-D FIREBASE";
 				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +437,7 @@
 				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = YW49KTJKFW;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +445,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +464,7 @@
 				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = YW49KTJKFW;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TraccarManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.traccar.TraccarManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,7 +492,7 @@
 				CBA62FAA1F5E143600BEDA76 /* Google */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CE0721371C86EB9800D057CE /* Build configuration list for PBXNativeTarget "TraccarManager" */ = {
 			isa = XCConfigurationList;
@@ -477,35 +502,35 @@
 				CBA62FAB1F5E143600BEDA76 /* Google */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5EE3CA2B2998757A002C86E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		541F9C9E2A62398D00E80A77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5EE3CA2C2998757A002C86E4 /* FirebaseAnalytics */ = {
+		541F9C9F2A62398D00E80A77 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EE3CA2B2998757A002C86E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 541F9C9E2A62398D00E80A77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		5EE3CA2E2998757A002C86E4 /* FirebaseCrashlytics */ = {
+		541F9CA12A62398D00E80A77 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EE3CA2B2998757A002C86E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 541F9C9E2A62398D00E80A77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
 		};
-		5EE3CA302998757A002C86E4 /* FirebaseMessaging */ = {
+		541F9CA32A62398D00E80A77 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EE3CA2B2998757A002C86E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 541F9C9E2A62398D00E80A77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
